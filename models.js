@@ -29,6 +29,7 @@ const ShoppingList = {
   },
   get: function() {
     console.log('Retrieving shopping list items');
+    console.log(this.items)
     return Object.keys(this.items).map(key => this.items[key]);
   },
   delete: function(id) {
